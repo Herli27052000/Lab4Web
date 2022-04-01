@@ -244,3 +244,114 @@ Disini kita membuat **ID HERO** untuk kemudian ditambahkan beberapa element **ht
     line-height: 25px;
 }
 ```
+## 8). MENGATUR LAYOUT MAIN DAN SIDEBAR
+
+**PENJELASAN**
+
+Code dibawah adalah bagaimana mengatur main dan sidebar dalam bentuk css
+
+**code css**
+```css
+/* main content */
+#wrapper{
+    margin: 0;
+}
+#main{
+    float: left;
+    width: 640px;
+    padding: 20px;
+}
+/* sidebar area */
+#sidebar{
+    float: left;
+    width: 260px;
+    padding: 20px;
+}
+```
+
+## 9). MEMBUAT SIDEBAR WIDGET
+
+## CONTOH CODE DAN TAMPILAN DIBROWSER NYA!
+![sidebar_widget](img/sidebar_widget.png)
+
+**PENJELASAN**
+
+Disini dibuat dengan menggunakan **class widget-box** dalam pendeklarasian di css untuk membuat **sidebar widget** seperti gambar di atas dengan ketentuan **float left**
+seperti contoh gambar di atas.
+
+**code html**
+```html
+            <aside id="sidebar">
+                <div class="widget-box">
+                    <h3 class="title">Widget Header</h3>
+                    <ul>
+                        <li><a href="#">Widget Link</a></li>
+                        <li><a href="#">Widget Link</a></li>
+                        <li><a href="#">Widget Link</a></li>
+                        <li><a href="#">Widget Link</a></li>
+                        <li><a href="#">Widget Link</a></li>
+                    </ul>
+                </div>
+                <div class="widget-box">
+                    <h3 class="title">Widget Text</h3>
+                    <p>Vestibulum lorem elit, iaculis in nisl volutpat, malesuada tincidunt
+                        arcu. Proin in leo fringilla, vestibulum mi porta, faucibus felis. Integer
+                        pharetra est nunc, nec pretium nunc pretium ac.</p>
+                </div>
+            </aside>
+```
+
+**code css**
+```css
+/* widget */
+.widget-box{
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+.widget-box .title{
+    padding: 10px 16px;
+    background-color: #428bca;
+    color: #fff;
+}
+.widget-box ul{
+   list-style-type: none;
+}
+.widget-box li{
+    border-bottom: 1px solid #eee;
+}
+.widget-box li a{
+    padding: 10px 16px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+.widget-box li:hover a{
+    background-color: #eee;
+}
+.widget-box p{
+    padding: 15px;
+    line-height: 25px;
+}
+```
+
+## 10). MENGATUR  FOOTER
+
+## CONTOH CODE DAN TAMPILAN DIBROWSER NYA!
+![footer](img/footer.png)
+
+**PENJELASAN**
+
+Disini ditambahkan CSS pada bagian **footer** nya seperti contoh gambar di atas.
+
+**code css**
+```css
+/* footer */
+footer{
+    clear: both;
+    background-color: #1d1d1d;
+    padding: 20px;
+    color: #eee;
+}
+```
+
+## 11).MENAMBAHKAN ELEMENT LAINNYA PADA MAIN CONTENT
